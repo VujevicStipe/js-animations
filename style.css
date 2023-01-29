@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.slider{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #5ab436, #dde784, #d1e239);
+}
+
+nav{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+#logo{
+    font-size: 40px;
+    margin-left: 180px;
+}
+
+ul{
+    display: flex;
+    margin-right: 197px;
+    list-style-type: none;
+}
+
+li{
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+section{
+    margin-top: 30px;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 7px 6px 14px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hero::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+.headline{
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    left: -7%;
+    font-size: 110px;
+    transform: translate(-20%, -70%);
+    font-family: 'Montserrat', sans-serif;
+}
+
